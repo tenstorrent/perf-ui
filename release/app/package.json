@@ -1,0 +1,34 @@
+{
+    "name": "perf-ui",
+    "version": "1.2.0",
+    "productName": "Tenstorrent Perf UI",
+    "description": "Tenstorrent Performance Visualizer",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tenstorrent/perf-ui.git"
+    },
+    "author": {
+        "name": "Tenstorrent Inc.",
+        "url": "https://tenstorrent.com"
+    },
+    "contributors": [
+        {
+            "name": "Asher Minden-Webb"
+        },
+        {
+            "name": "Jackson Nie"
+        },
+        {
+            "name": "Vedang Ashwin Naik"
+        }
+    ],
+    "license": "Apache-2.0",
+    "private": true,
+    "main": "./dist/main/main.js",
+    "scripts": {
+        "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+        "postinstall": "npm run rebuild && npm run link-modules",
+        "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+    },
+    "dependencies": {}
+}

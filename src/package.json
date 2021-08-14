@@ -1,0 +1,32 @@
+{
+  "name": "perf-ui",
+  "version": "1.1.0-beta-1",
+  "productName": "Tenstorrent Perf UI",
+  "description": "Tenstorrent Performance Visualizer",
+  "main": "./dist/main/main.js",
+  "author": {
+    "name": "Tenstorrent Inc.",
+    "url": "https://tenstorrent.com"
+  },
+  "contributors": [
+    {
+      "name": "Asher Minden-Webb"
+    },
+    {
+      "name": "Jackson Nie"
+    },
+    {
+      "name": "Vedang Ashwin Naik"
+    }
+  ],
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.10"
+  },
+  "license": "Apache-2.0",
+  "private": true
+}

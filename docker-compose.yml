@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# SPDX-FileCopyrightText: © 2024 Tenstorrent Inc.
+
+version: '2.1'
+services:
+  ssh-server:
+    build:
+      context: ./ssh-server
+      dockerfile: Dockerfile
+    container_name: ssh-server
+    hostname: ssh-server
+    volumes:
+      - ./data:/home/sshuser/data
+    ports:
+      - 2222:22
+    restart: unless-stopped
