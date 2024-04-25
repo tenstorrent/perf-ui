@@ -8,7 +8,7 @@
         "url": "git+https://github.com/tenstorrent/perf-ui.git"
     },
     "author": {
-        "name": "Tenstorrent Inc.",
+        "name": "Tenstorrent AI ULC",
         "url": "https://tenstorrent.com"
     },
     "contributors": [
