@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
-// SPDX-FileCopyrightText: © 2024 Tenstorrent Inc.
+// SPDX-FileCopyrightText: © 2024 Tenstorrent AI ULC
 
 import PerfDumpD3Controller from './perf_dump_d3';
 import NcriscD3Controller from './ncrisc_dump_d3';
