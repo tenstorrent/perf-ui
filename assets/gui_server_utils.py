@@ -2,7 +2,7 @@
 
 # SPDX-License-Identifier: Apache-2.0
 #
-# SPDX-FileCopyrightText: © 2024 Tenstorrent AI ULC.
+# SPDX-FileCopyrightText: © 2024 Tenstorrent AI ULC
 
 # Simple client that can be used by GUI to test connection to work area, and get information like
 # list of models/tests, dumps, etc.
